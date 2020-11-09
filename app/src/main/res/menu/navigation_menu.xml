@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+
+    >
+
+    <item
+
+        android:id="@+id/nav_addproduct"
+        android:icon="@mipmap/add_product_icon"
+        android:title="@string/menu_add_product"
+        android:iconTint="#C97A1C"
+        />
+    <item
+
+        android:id="@+id/nav_mshelf"
+        android:icon="@mipmap/add_product_icon"
+        android:title="@string/menu_manage_shelf"
+        android:iconTint="#C97A1C"
+        />
+    <item
+        android:id="@+id/nav_morder"
+        android:icon="@mipmap/manage_order"
+        android:title="@string/menu_manage_order" />
+    <item
+        android:id="@+id/nav_mbank"
+        android:icon="@mipmap/manage_bank"
+        android:title="@string/menu_manage_bank" />
+    <item
+        android:id="@+id/nav_mprices"
+        android:icon="@mipmap/manage_prices"
+        android:title="@string/menu_manage_prices" />
+    <item
+        android:id="@+id/nav_mreports"
+        android:icon="@mipmap/manage_reports"
+        android:title="@string/menu_manage_reports" />
+    <item
+        android:id="@+id/nav_salespromotion"
+        android:icon="@mipmap/sales_promotions"
+        android:title="@string/menu_sales_promotion" />
+    <item
+        android:id="@+id/nav_minventory"
+        android:icon="@mipmap/manage_inventory"
+        android:title="@string/menu_manage_inventory" />
+
+</menu>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pcon"
+    android:layout_width="100dp"
+    android:layout_height="120dp"
+    android:padding="@dimen/google_1x"
+
+
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivFish_cons"
+        android:src="@drawable/onedollarsample"
+
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

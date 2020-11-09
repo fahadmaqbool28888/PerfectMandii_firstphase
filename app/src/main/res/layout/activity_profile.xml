@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/opv2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/opv2"
+                    app:title="Profile"
+                    app:titleTextColor="@color/opv1"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+
+                </androidx.appcompat.widget.Toolbar>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="80dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/avatar"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Fahad Maqbool"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/opv2"/>
+                </LinearLayout>
+
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabs_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    app:tabMode="scrollable"
+                    android:background="@color/opv2"
+                    app:tabSelectedTextColor="@color/opv1"
+                    app:tabTextColor="@color/whiteTextColor"
+                    app:tabIndicatorColor="@color/opv1"
+                    app:tabTextAppearance="@style/TabLayoutTextStyle1"
+                    />
+            </com.google.android.material.appbar.AppBarLayout>
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#c6d7d2"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

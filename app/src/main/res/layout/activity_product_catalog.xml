@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductCatalog"
+    >
+    <RelativeLayout
+        android:id="@+id/UpperBar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/vend_prod_prov"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"/>
+
+        <ImageView
+            android:id="@+id/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <ImageView
+            android:id="@+id/cart_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/vend_prod_prov"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="113dp"
+            android:layout_marginBottom="-4dp"
+            android:layout_toRightOf="@id/vend_prod_prov"
+            android:src="@drawable/ic_baseline_add_shopping_cart_24" />
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/catalog_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/UpperBar"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/itemdes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:text="Shop These item"
+        app:layout_constraintTop_toBottomOf="@id/catalog_product"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/catalog_sproduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/itemdes"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+
+    >
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@color/opv2"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+            <ImageView
+                android:id="@+id/bax_q"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/backspace_24"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                android:textColor="@color/opv2"
+                android:text="Payment Confirmation"/>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/status"
+
+        android:layout_margin="@dimen/google_1x"
+        android:textSize="15dp"
+        android:text="Not Paid"
+        android:textColor="#FF0000"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/appbar"/>
+    <LinearLayout
+        android:id="@+id/orderwala"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       app:layout_constraintTop_toBottomOf="@id/appbar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/google_1x"
+        >
+        <TextView
+            android:id="@+id/otext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Number: "
+            android:textColor="@color/opv2"/>
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/itext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invoice Number: "
+            android:textColor="@color/opv2"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Order_Detail_1"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:visibility="gone"
+        android:layout_marginBottom="1dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="@dimen/google_1x"
+        app:layout_constraintTop_toBottomOf="@id/orderwala"
+
+        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:padding="@dimen/activity_horizontal_margin"
+
+        android:layout_marginTop="120dp"
+        android:id="@+id/bill_board"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/whiteTextColor"
+       app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/subtotal_Bill"
+            android:text="Order Amount: "
+            android:textSize="15dp"
+            android:textColor="@color/opv2"
+            app:layout_constraintTop_toTopOf="@id/bill_board"
+            app:layout_constraintStart_toStartOf="@id/bill_board"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/getsubtotal_i"
+            app:layout_constraintTop_toTopOf="@id/bill_board"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5000"
+            android:textColor="@color/opv2"
+            android:textSize="15dp"
+
+           app:layout_constraintEnd_toEndOf="@id/bill_board"/>
+        <TextView
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/subtotal_Bill"
+            app:layout_constraintStart_toStartOf="@id/bill_board"
+            android:text="Packing Charges"
+            android:textSize="15dp"
+            android:textColor="@color/opv2"/>
+        <TextView
+
+            android:id="@+id/packagingcost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/subtotal_Bill"
+            app:layout_constraintEnd_toEndOf="@id/bill_board"
+            android:text="Packing Charges: 100"
+            android:textSize="15dp"
+            android:textColor="@color/opv2"/>
+        <TextView
+            android:id="@+id/Grandtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/packagingcost"
+            android:text="Total Payable:5100"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="@id/bill_board"
+            android:textColor="@color/opv2">
+
+        </TextView>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/bill_board"
+
+            app:layout_constraintTop_toBottomOf="@id/packagingcost"
+            android:text="Total Payable"
+            android:textSize="15dp"
+
+            android:textColor="@color/opv2">
+
+        </TextView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/bill_board">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:textColor="@color/blackTextColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Payment Options"
+                android:textStyle="bold"
+                android:padding="10dp"
+                />
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                app:cardBackgroundColor="#1D000000"
+                app:cardCornerRadius="15dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_gravity="center"
+                        android:padding="12dp"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_weight="0.05"
+                        android:layout_height="12dp"
+                        android:background="@color/opv1"/>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:textColor="@color/opv2"
+                        android:padding="15dp"
+                        android:layout_width="0dp"
+                        android:layout_weight=".4"
+                        android:layout_height="wrap_content"
+                        android:text="Bank Alfalah"/>
+                    <TextView
+                        android:textColor="@color/opv2"
+                        android:padding="15dp"
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:lines="3"
+
+                        android:text="0268-1003772020
+                        Muhammad Nasir Imran Nasir Aqeel Nasir"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                app:cardBackgroundColor="#1D000000"
+                app:cardCornerRadius="15dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_gravity="center"
+                        android:padding="12dp"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_weight="0.05"
+                        android:layout_height="12dp"
+                        android:background="@color/opv1"/>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:textColor="@color/opv2"
+                        android:padding="15dp"
+                        android:layout_width="0dp"
+                        android:layout_weight=".4"
+                        android:layout_height="wrap_content"
+                        android:text="Easy Paisa"/>
+                    <TextView
+                        android:textColor="@color/opv2"
+                        android:padding="15dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:lines="2"
+                        android:layout_height="wrap_content"
+                        android:text="0334-5381060
+                                 Aqeel Nasir"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                app:cardBackgroundColor="#1D000000"
+                app:cardCornerRadius="15dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_gravity="center"
+                        android:padding="12dp"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_weight="0.05"
+                        android:layout_height="12dp"
+                        android:background="@color/opv1"/>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:textColor="@color/opv2"
+                        android:padding="15dp"
+                        android:layout_width="0dp"
+                        android:layout_weight=".4"
+                        android:layout_height="wrap_content"
+                        android:text="Jazz Cash"/>
+                    <TextView
+                        android:textColor="@color/opv2"
+                        android:padding="15dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="0300-5274747
+                                Aqeel nasir"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cancel_order"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+
+        android:layout_margin="@dimen/google_1x"
+        android:background="@color/opv3"
+        app:layout_constraintBottom_toTopOf="@id/order_cancel_id" >
+
+
+        <TextView
+            android:id="@+id/submit_bill"
+            app:layout_constraintRight_toLeftOf="@id/getsubtotal_i"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+
+            android:background="@color/opv1"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Attach Payment Slip"
+            android:textSize="10dp"
+            android:padding="10dp"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintStart_toStartOf="@id/cancel_order"
+            app:layout_constraintTop_toTopOf="@id/cancel_order"
+            app:layout_constraintBottom_toBottomOf="@id/cancel_order"
+
+            android:textColor="@color/whiteTextColor"/>
+        <TextView
+            android:id="@+id/submit_bill_later"
+            app:layout_constraintRight_toLeftOf="@id/getsubtotal_i"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+
+            android:background="@color/opv1"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Attach Payment Slip Later"
+            android:textSize="10dp"
+            android:padding="10dp"
+            android:layout_marginRight="15dp"
+            app:layout_constraintEnd_toEndOf="@id/cancel_order"
+            app:layout_constraintTop_toTopOf="@id/cancel_order"
+            app:layout_constraintBottom_toBottomOf="@id/cancel_order"
+
+            android:textColor="@color/whiteTextColor"/>
+
+
+
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_marginBottom="@dimen/google_1x"
+
+        android:id="@+id/order_cancel_id"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:background="@color/opv1"
+        android:gravity="center"
+
+        android:text="Cancel Order"
+        android:textSize="10dp"
+        android:padding="10dp"
+        android:layout_marginRight="15dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+
+        android:textColor="@color/whiteTextColor">
+
+    </TextView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

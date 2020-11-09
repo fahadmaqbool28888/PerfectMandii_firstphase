@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#c6d7d2"
+    tools:context=".ProfileInformationActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:id="@+id/itemdish"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/opv2"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:text="Profile Information"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:src="@drawable/one"
+                android:checked="true"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/stage_1"
+                    android:layout_gravity="center"
+                    android:src="@drawable/one"
+
+                    android:layout_width="32dp"
+                    android:layout_weight="2"
+
+                    android:layout_height="32dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Creditional Information"/>
+            </LinearLayout>
+            <LinearLayout
+                android:src="@drawable/one"
+
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/stage_2"
+                    android:layout_gravity="center"
+                    android:src="@drawable/two"
+
+                    android:layout_width="32dp"
+                    android:layout_weight="2"
+
+                    android:layout_height="32dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Personal Information"/>
+            </LinearLayout>
+            <LinearLayout
+                android:src="@drawable/two"
+                android:checked="true"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/stage_3"
+                    android:layout_gravity="center"
+                    android:src="@drawable/three"
+
+                    android:layout_width="32dp"
+                    android:layout_weight="2"
+
+                    android:layout_height="32dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Attach
+                    Documents"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+

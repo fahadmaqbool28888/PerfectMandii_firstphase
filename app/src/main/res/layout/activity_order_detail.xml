@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderDetailActivity">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_OrderDetailActivity"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:id="@+id/toolarContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                app:layout_constraintTop_toTopOf="@id/toolarContainer"
+                app:layout_constraintStart_toStartOf="@id/toolarContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Details"
+                android:textColor="@color/opv2"
+                android:textSize="23dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+
+        android:id="@+id/order_cha"
+        android:layout_margin="15dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_OrderDetailActivity">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:textColor="@color/blackTextColor"
+                android:textSize="18dp"
+                android:text="Order No"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="@color/opv1"
+                android:textSize="16dp"
+                android:id="@+id/customer_order"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textColor="@color/blackTextColor"
+
+                android:textSize="18dp"
+                android:text="Invoice No"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@color/opv1"
+
+                android:id="@+id/invoice_order"
+                android:textSize="16dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textColor="@color/blackTextColor"
+
+                android:textSize="18dp"
+                android:text="Order Date"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/order_place"
+                android:textColor="@color/opv1"
+                android:textSize="16dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textColor="@color/blackTextColor"
+                android:textSize="18dp"
+                android:text="Total Bill"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="@color/opv1"
+                android:textSize="16dp"
+                android:id="@+id/grandtotal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="@dimen/google_1x"
+        android:padding="@dimen/google_1x"
+        android:id="@+id/dashboard_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/order_cha">
+        <LinearLayout
+
+            android:layout_margin="15dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:text="Order
+                 Splits"
+                    android:textColor="@color/blackTextColor"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" />
+                <TextView
+                    android:text="Total
+                 Delivered"
+                    android:textColor="@color/blackTextColor"
+
+                    android:gravity="center_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textColor="@color/blackTextColor"
+
+                    android:text="InTransit"
+                    android:gravity="center_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+
+
+                    android:id="@+id/osp"
+                    android:textColor="@color/blackTextColor"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" />
+                <TextView
+                    android:id="@+id/td"
+                    android:textColor="@color/blackTextColor"
+
+                    android:gravity="center_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textColor="@color/blackTextColor"
+                    android:id="@+id/in"
+
+                    android:gravity="center_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="@dimen/google_1x"
+        app:cardCornerRadius="@dimen/google_1x"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/dashboard_check"
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:layout_margin="15dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:text="Order Split"
+                    android:textColor="@color/blackTextColor"
+                    android:layout_width="0dp"
+                    android:textSize="9dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" />
+                <TextView
+
+                    android:textColor="@color/blackTextColor"
+                    android:text="Total Amount"
+
+                    android:textSize="9dp"
+                    android:gravity="center_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textColor="@color/blackTextColor"
+
+                    android:text="Status"
+                    android:gravity="center_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="9dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textColor="@color/blackTextColor"
+
+                    android:text="View"
+                    android:textSize="9dp"
+                    android:gravity="center_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec_pl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

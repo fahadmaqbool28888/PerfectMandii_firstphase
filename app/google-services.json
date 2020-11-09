@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "103513298668",
+    "project_id": "perfectmandi-389e6",
+    "storage_bucket": "perfectmandi-389e6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:103513298668:android:a85e393a999bb3d0fc37c9",
+        "android_client_info": {
+          "package_name": "com.consumer.perfectmandii"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "103513298668-0m40jsqjago3ignv5pdgobpmrppftajo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJNBs7QHAda89JkZBiR20oHtoC1Km8DtA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "103513298668-0m40jsqjago3ignv5pdgobpmrppftajo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

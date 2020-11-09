@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.User.customerprofile.CustomerDashboard">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/opv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@color/opv1"
+
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+            <ImageView
+                android:id="@+id/sidnav_cd"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textSize="20dp"
+                android:layout_marginLeft="15dp"
+
+                android:textColor="@color/opv1"
+                android:text="Perfect"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mandi"
+                android:textColor="@color/opv1"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textSize="20dp"/>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/appbar">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/toolas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/editprofile"
+                android:src="@drawable/ic_baseline_edit_24"
+                app:layout_constraintTop_toTopOf="@id/toolas"
+                app:layout_constraintEnd_toEndOf="@id/toolas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:padding="@dimen/google_1x"
+                    android:id="@+id/disp"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/ui"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="#FF000000"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <TextView
+                android:id="@+id/editprofileaction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Edit Profile"
+                android:textColor="#D20000"
+                android:textStyle="bold"
+                android:padding="@dimen/google_1x"
+                />
+
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/opv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Full Name" />
+
+                <TextView
+                    android:id="@+id/getfullname"
+                    android:textColor="@color/opv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Full Name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/opv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile Number" />
+
+                <TextView
+                    android:id="@+id/getmobilenumber"
+                    android:textColor="@color/opv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="03001234567" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/opv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CNIC" />
+
+                <TextView
+                    android:id="@+id/getcnic"
+                    android:textColor="@color/opv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12345-1234567-3" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/opv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Province" />
+
+                <TextView
+                    android:id="@+id/getprovince"
+                    android:textColor="@color/opv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Punjab" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/opv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="City" />
+
+                <TextView
+                    android:id="@+id/getcity"
+                    android:textColor="@color/opv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rawalpindi" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/opv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Area Code" />
+
+                <TextView
+                    android:id="@+id/getareacode"
+                    android:textColor="@color/opv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="44000" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/opv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shipping Address" />
+
+                <TextView
+                    android:id="@+id/getfsa"
+                    android:textColor="@color/opv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="3"
+                    android:text="________________________________________" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/opv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Billing Address" />
+
+                <TextView
+                    android:id="@+id/getfba"
+                    android:textColor="@color/opv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="3"
+                    android:text="________________________________________" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <!--    <string name="menu_add_product">Add Product</string>
+    <string name="menu_manage_order">Manage Order</string>
+    <string name="menu_manage_bank">Manage Bank</string>
+    <string name="menu_manage_prices">Manage Prices</string>
+    <string name="menu_manage_reports">Manage Reports</string>
+    <string name="menu_sales_promotion">Sales and Promotion</string>
+    <string name="menu_manage_inventory">Manage Inventory</string>-->
+
+        <item
+            android:id="@+id/nav_addproduct"
+            android:icon="@mipmap/add_product_icon"
+            android:title="@string/menu_add_product" />
+        <item
+            android:id="@+id/nav_mshelf"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_manage_shelf" />
+        <item
+            android:id="@+id/nav_morder"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_manage_order" />
+        <item
+            android:id="@+id/nav_mbank"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_manage_bank" />
+
+        <item
+            android:id="@+id/nav_mreports"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_manage_reports" />
+        <item
+            android:id="@+id/nav_salespromotion"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_sales_promotion" />
+
+    </group>
+</menu>

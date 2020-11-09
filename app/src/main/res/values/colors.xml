@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#4000ff</color>
+    <color name="colortheme">#83A5FF</color>
+    <color name="colorPrimaryDark">#125688</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#c8e8ff</color>
+    <color name="colorAccent_1">#B1D0E6</color>
+    //
+    <!--colors for profile-->
+    <color name="profilePrimaryDark">#FF3B30</color>
+    <color name="profileAccentColor">#F7F7F7</color>
+    <color name="whiteTextColor">#fff</color>
+    <color name="profileBackground">#fff</color>
+    <color name="blackTextColor">#000</color>
+    <color name="profileEditTextColor">#707070</color>
+    <color name="colortext">#3A3D54</color>
+    <color name="colortext1">#251C22</color>
+    <color name="scolor">#7e1416</color>
+
+    //
+    <color name="backu">#83A4FF</color>
+
+    <color name="ftextcolor">#3B03F6</color>
+    <color name="opv1">#DC8013</color>
+    <color name="opv2">#013747</color>
+    <color name="opv5">#81013747</color>
+    <color name="opv3">#7C013747</color>
+
+    <color name="primarybackground">#c6d7d2</color>
+    <color name="grey_ivory5">#000000</color>
+    <color name="background_color">#000000</color>
+</resources>

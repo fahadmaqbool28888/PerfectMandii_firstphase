@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="170dp"
+
+    android:id="@+id/product_box_flashsale"
+    android:layout_margin="1dp"
+
+    app:cardBackgroundColor="#9FD1D1D1"
+    app:cardCornerRadius="@dimen/google_1x"
+    android:layout_height="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+
+
+            android:scaleType="fitCenter"
+            android:id="@+id/product_img"
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="match_parent"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="1dp"
+            android:id="@+id/prod_container"
+            android:background="#CED1D1D1"
+            android:layout_height="45dp">
+            <TextView
+                android:id="@+id/product_name_"
+                android:textColor="@color/opv2"
+                android:textStyle="bold"
+                android:lines="1"
+                android:text="Product Name"
+                android:gravity="center_horizontal"
+                app:layout_constraintBottom_toTopOf="@id/product_price_"
+                app:layout_constraintStart_toStartOf="@id/prod_container"
+                app:layout_constraintEnd_toEndOf="@id/prod_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Rs : 100"
+                android:id="@+id/product_price_"
+                android:textColor="#B06053"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/prod_container"
+
+                app:layout_constraintStart_toStartOf="@id/prod_container"
+                app:layout_constraintEnd_toEndOf="@id/prod_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                app:layout_constraintStart_toEndOf="@id/product_price_"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/product_weight"
+                android:text="/KG"
+                android:textStyle="bold"
+                android:textColor="#B06053"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/out_of_stock"
+
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="22dp"
+            android:background="#FF3B30"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:textSize="9dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="@color/whiteTextColor"
+                android:text="Out of stock"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/discount_pan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/flashsale_2989">
+            <TextView
+                android:id="@+id/discount_dexs"
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:textSize="9dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/discount_pan"
+                app:layout_constraintEnd_toEndOf="@id/discount_pan"
+                app:layout_constraintTop_toTopOf="@id/discount_pan"
+                app:layout_constraintBottom_toBottomOf="@id/discount_pan"
+                android:textColor="@color/whiteTextColor"
+                android:text="100% off"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="110dp"
+
+    android:id="@+id/product_box_flashsale"
+    android:layout_margin="1dp"
+
+    app:cardBackgroundColor="#9FD1D1D1"
+    app:cardCornerRadius="@dimen/google_1x"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+
+
+            android:scaleType="fitCenter"
+            android:id="@+id/product_img"
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="match_parent"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="1dp"
+            android:id="@+id/prod_container"
+            android:background="#CED1D1D1"
+            android:layout_height="35dp">
+            <TextView
+                android:id="@+id/product_name_"
+                android:textColor="@color/opv2"
+                android:textStyle="bold"
+                android:lines="1"
+                android:text="Product Name"
+                android:gravity="center_horizontal"
+                app:layout_constraintBottom_toTopOf="@id/product_price_"
+                app:layout_constraintStart_toStartOf="@id/prod_container"
+                app:layout_constraintEnd_toEndOf="@id/prod_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Rs : 100"
+                android:id="@+id/product_price_"
+                android:textColor="#B06053"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/prod_container"
+
+                app:layout_constraintStart_toStartOf="@id/prod_container"
+                app:layout_constraintEnd_toEndOf="@id/prod_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/out_of_stock"
+
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="22dp"
+            android:background="#FF3B30"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:textSize="9dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="@color/whiteTextColor"
+                android:text="Out of stock"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/discount_pan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/flashsale_2989">
+            <TextView
+                android:id="@+id/discount_dexs"
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:textSize="9dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/discount_pan"
+                app:layout_constraintEnd_toEndOf="@id/discount_pan"
+                app:layout_constraintTop_toTopOf="@id/discount_pan"
+                app:layout_constraintBottom_toBottomOf="@id/discount_pan"
+                android:textColor="@color/whiteTextColor"
+                android:text="100% off"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>-->
