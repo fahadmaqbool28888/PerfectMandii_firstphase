@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#c6d7d2"
-    tools:context=".ProfileInformationActivity">
+    tools:context=".Activity.Authentication.ProfileInformationActivity">
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
         app:layout_constraintTop_toTopOf="parent"

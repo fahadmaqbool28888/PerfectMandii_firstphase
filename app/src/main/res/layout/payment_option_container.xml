@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_margin="5dp"
+
+    android:layout_width="match_parent"
+    app:cardBackgroundColor="#17013747"
+    app:cardCornerRadius="15dp"
+    android:layout_height="wrap_content"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_gravity="center"
+            android:padding="12dp"
+            android:layout_width="0dp"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="0.05"
+            android:layout_height="12dp"
+            android:background="@color/opv1"/>
+        <LinearLayout
+            android:layout_marginLeft="@dimen/google_1x"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/opv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Bank/CO: "/>
+            <TextView
+                android:textColor="@color/opv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="A/C Title: "/>
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/opv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A/C#: "/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="16dp"
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/bankname"
+
+                android:textColor="@color/opv2"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:text="Bank Alfalah"/>
+            <TextView
+                android:id="@+id/banlcode"
+                android:textColor="@color/opv2"
+
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+
+                android:text="0268-1003772020
+                        Muhammad Nasir Imran Nasir Aqeel Nasir"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

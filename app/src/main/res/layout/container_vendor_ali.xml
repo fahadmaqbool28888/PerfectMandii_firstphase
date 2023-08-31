@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/vendor_wala_dabba"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_height="220dp"
+    android:layout_width="120dp"
+
+    android:layout_margin="@dimen/google_1x"
+    app:cardBackgroundColor="#9FD1D1D1"
+    app:cardCornerRadius="@dimen/google_1x">
+    <androidx.constraintlayout.widget.ConstraintLayout
+  android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/store_logo_1"
+            app:civ_border_color="@color/opv2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/optimizedlogo"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            app:layout_constraintTop_toBottomOf="@id/store_logo_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_box">
+
+            <TextView
+                android:id="@+id/storename_vendor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/text_box"
+                app:layout_constraintStart_toStartOf="@id/text_box"
+
+                app:layout_constraintEnd_toEndOf="@id/text_box"
+                android:text="Store Name"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/opv1"/>
+            <TextView
+                android:id="@+id/storecity_vendor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/text_box"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="@id/text_box"
+                app:layout_constraintTop_toBottomOf="@id/storename_vendor"
+                android:text="Store Name"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/opv2"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

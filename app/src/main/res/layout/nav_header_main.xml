@@ -66,11 +66,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <com.google.android.material.bottomnavigation.BottomNavigationView
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/wallet_area"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="52dp"
             android:background="@color/opv1"
-            app:menu="@menu/bot"/>
+            app:menu="@menu/bot">
+
+            <TextView
+                app:layout_constraintStart_toStartOf="@id/wallet_area"
+                android:textStyle="bold"
+ android:textSize="16dp"
+                android:layout_marginLeft="@dimen/google_1x"
+                android:id="@+id/wallet_amount"
+                app:layout_constraintTop_toTopOf="@id/wallet_area"
+                app:layout_constraintBottom_toBottomOf="@id/wallet_area"
+                android:text="Your Wallet:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 
 

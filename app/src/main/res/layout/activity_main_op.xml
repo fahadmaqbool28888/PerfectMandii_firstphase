@@ -20,7 +20,25 @@
             android:theme="@style/ToolBarStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/opv2"/>
+            android:background="@color/opv2">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/perfect_Search_Term"
+                >
+
+                <ImageView
+                    android:id="@+id/search_type"
+                    android:layout_width="19dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/ic_search_name"
+                    app:layout_constraintBottom_toBottomOf="@id/perfect_Search_Term"
+                    app:layout_constraintEnd_toEndOf="@id/perfect_Search_Term"
+                    app:layout_constraintTop_toTopOf="@id/perfect_Search_Term" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
 
         <!-- Let's add fragment -->
         <FrameLayout
@@ -32,41 +50,89 @@
         <com.google.android.material.bottomnavigation.BottomNavigationView
            android:id="@+id/_bnavg_1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="62dp"
             android:background="@color/opv1"
             app:menu="@menu/bot">
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:id="@+id/bottom_con"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <androidx.cardview.widget.CardView
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    app:layout_constraintTop_toTopOf="@id/bottom_con"
+app:layout_constraintStart_toStartOf="@id/bottom_con"
+                    app:layout_constraintEnd_toEndOf="@id/bottom_con"
+                    android:id="@+id/numb1_1"
+                    android:layout_width="22dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_height="22dp"
+android:visibility="gone"
+
+
+                    android:layout_gravity="center"
+                    app:cardBackgroundColor="#900D09" >
+                    <androidx.constraintlayout.widget.ConstraintLayout
+
+                        android:layout_width="match_parent"
+                        android:id="@+id/numbr"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            app:layout_constraintStart_toStartOf="@id/numbr"
+                            app:layout_constraintEnd_toEndOf="@id/numbr"
+                            app:layout_constraintTop_toTopOf="@id/numbr"
+                            app:layout_constraintBottom_toBottomOf="@id/numbr"
+                            android:textColor="@color/whiteTextColor"
+                            android:textSize="9dp"
+
+                            android:id="@+id/value"
+                            android:text="15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
             <androidx.cardview.widget.CardView
-                android:visibility="gone"
-                android:id="@+id/numb1_1"
+android:visibility="gone"
+                android:id="@+id/numb2_1"
                 android:layout_width="22dp"
-                app:cardCornerRadius="10dp"
                 android:layout_height="22dp"
-
-android:layout_marginBottom="14dp"
-                android:layout_marginLeft="@dimen/google_1x"
                 android:layout_gravity="center"
-                app:cardBackgroundColor="#900D09" >
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:id="@+id/numbr"
-                    android:layout_height="match_parent">
 
+                android:layout_marginLeft="96dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="14dp"
+
+                app:cardBackgroundColor="#900D09"
+                app:cardCornerRadius="10dp">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/numbr1"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
                     <TextView
-                        app:layout_constraintStart_toStartOf="@id/numbr"
-                        app:layout_constraintEnd_toEndOf="@id/numbr"
-                        app:layout_constraintTop_toTopOf="@id/numbr"
-                        app:layout_constraintBottom_toBottomOf="@id/numbr"
+                        app:layout_constraintStart_toStartOf="@id/numbr1"
+                        app:layout_constraintEnd_toEndOf="@id/numbr1"
+                        app:layout_constraintTop_toTopOf="@id/numbr1"
+                        app:layout_constraintBottom_toBottomOf="@id/numbr1"
                         android:textColor="@color/whiteTextColor"
                         android:textSize="9dp"
 
-                        android:id="@+id/value"
+                        android:id="@+id/value1"
                         android:text="15"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                 </androidx.constraintlayout.widget.ConstraintLayout>
+
             </androidx.cardview.widget.CardView>
-        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+       </com.google.android.material.bottomnavigation.BottomNavigationView>
 
     </LinearLayout>
 

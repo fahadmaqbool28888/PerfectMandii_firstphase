@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Product">
+    tools:context=".Activity.Home.ProductScreen.DisplayProduct.Home.Fragment.ProductBy.Category.by.Product">
     <ImageView
         android:id="@+id/error_Res"
         app:layout_constraintTop_toTopOf="parent"

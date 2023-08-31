@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="105dp"
+    android:layout_width="match_parent"
+    android:layout_margin="9dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="13dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="#cdeace"
+        android:layout_height="115dp"
+
+      >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_weight=".2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/imgcontainer"
+                android:padding="@dimen/_1ssp"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    app:layout_constraintTop_toTopOf="@id/imgcontainer"
+                    app:layout_constraintBottom_toBottomOf="@id/imgcontainer"
+                    app:layout_constraintStart_toStartOf="@id/imgcontainer"
+                    app:layout_constraintEnd_toEndOf="@id/imgcontainer"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/imgpth"
+                    android:src="@drawable/steeljug"
+                    android:scaleType="fitCenter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent"
+                android:padding="12sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="Tea Glass Silver"
+
+                    android:id="@+id/rp_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="13sp"/>
+                <TextView
+                    android:text="PKR 3000/-"
+
+
+                    android:id="@+id/rp_pkr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="#a01d17"
+                    android:textStyle="bold"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/rp_q"
+                    android:text="10 Pieces"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/rp_total"
+                        android:text="Total: PKR 30,000"
+                        android:padding="@dimen/_1ssp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="13sp"
+                        />
+
+                    <Button
+                        android:id="@+id/replace_"
+                        android:text="OK"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

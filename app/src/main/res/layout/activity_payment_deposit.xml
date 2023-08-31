@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.PaymentDepositActivity"
+    tools:context=".Activity.Home.Order.PaymentDepositActivity"
     android:background="#c6d7d2">
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
@@ -123,7 +123,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
 
-                    android:text="Screenshot of Bank Deposit Slip"
+                    android:text="Payment Slip Attachment"
                     android:textColor="@color/opv2"
                     android:textSize="18dp"/>
                 <androidx.cardview.widget.CardView
@@ -139,7 +139,7 @@
                         android:id="@+id/attachfile"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Attached File"
+                        android:text="Attach File"
                         android:layout_gravity="center_horizontal"
                         android:padding="15dp" />
                         <ImageView

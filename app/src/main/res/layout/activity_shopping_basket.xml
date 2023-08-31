@@ -61,32 +61,47 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     android:layout_height="wrap_content"
                     app:layout_constraintBottom_toBottomOf="parent"/>
-                <CheckBox
-                    android:visibility="gone"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                  android:id="@+id/editva"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintRight_toLeftOf="@id/deleteb"
-                    android:layout_width="wrap_content"
-                    android:src="@drawable/ic_baseline_edit_24"
-                    android:layout_height="wrap_content"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/shoppingbasket"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="5"
         android:layout_marginStart="1dp"
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="1dp"
-        app:layout_constraintTop_toBottomOf="@id/appbar"
+        app:layout_constraintTop_toBottomOf="@id/appbar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <CheckBox
 
-        />
+
+                android:id="@+id/editva"
+           android:text="Select All"
+                android:textColor="@color/opv2"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/shoppingbasket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+
+
+
+                />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
 
     <androidx.cardview.widget.CardView
         app:layout_constraintBottom_toBottomOf="parent"

@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "103513298668",
-    "project_id": "perfectmandi-389e6",
-    "storage_bucket": "perfectmandi-389e6.appspot.com"
+    "project_number": "3340377632",
+    "project_id": "perfect-mandi-customer-central",
+    "storage_bucket": "perfect-mandi-customer-central.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:103513298668:android:a85e393a999bb3d0fc37c9",
+        "mobilesdk_app_id": "1:3340377632:android:a41eb8e4e3b67a188b6645",
         "android_client_info": {
-          "package_name": "com.consumer.perfectmandii"
+          "package_name": "com.customer.perfectcustomer"
         }
       },
       "oauth_client": [
         {
-          "client_id": "103513298668-0m40jsqjago3ignv5pdgobpmrppftajo.apps.googleusercontent.com",
+          "client_id": "3340377632-uku7pct4upovariehq28gdhj1nm0dpfk.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCJNBs7QHAda89JkZBiR20oHtoC1Km8DtA"
+          "current_key": "AIzaSyAFPiUpcdL_srxiAV-9zrwjLpyMwZug94Y"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "103513298668-0m40jsqjago3ignv5pdgobpmrppftajo.apps.googleusercontent.com",
+              "client_id": "3340377632-uku7pct4upovariehq28gdhj1nm0dpfk.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OrderViewActivity"
+    tools:context=".Activity.Home.Order.Place.OrderViewActivity"
     android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
 
     >
@@ -42,7 +42,7 @@
             android:id="@+id/cv_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="40dp"
+            android:layout_margin="30dp"
             app:layout_constraintTop_toTopOf="@id/subcompact"
 
             >
@@ -68,7 +68,7 @@
                 android:layout_margin="@dimen/google_1x"
                 app:layout_constraintStart_toStartOf="@id/cv_container"
                 app:layout_constraintEnd_toEndOf="@id/cv_container"
-                android:text="We’ve received your order, you will receive shipment soon. You can review your purchase details below."/>
+                android:text="We’ve received your order, you will receive shipment soon. You can review your order details below."/>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -222,7 +222,7 @@
 
                 </LinearLayout>
                 <LinearLayout
-
+android:visibility="gone"
                     android:id="@+id/previous_balance"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

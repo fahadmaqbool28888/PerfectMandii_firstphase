@@ -188,120 +188,25 @@
                 android:padding="10dp"
                 />
 
-            <androidx.cardview.widget.CardView
+            <androidx.recyclerview.widget.RecyclerView
 
+                android:id="@+id/bankRecycler"
                 android:layout_margin="5dp"
                 android:layout_width="match_parent"
                 app:cardBackgroundColor="#1D000000"
                 app:cardCornerRadius="15dp"
                 android:layout_height="wrap_content">
-                <LinearLayout
 
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:layout_gravity="center"
-                        android:padding="12dp"
-                        android:layout_width="0dp"
-                        android:layout_marginLeft="6dp"
-                        android:layout_weight="0.05"
-                        android:layout_height="12dp"
-                        android:background="@color/opv1"/>
-                    <TextView
-                        android:layout_gravity="center"
-                        android:textColor="@color/opv2"
-                        android:padding="15dp"
-                        android:layout_width="0dp"
-                        android:layout_weight=".4"
-                        android:layout_height="wrap_content"
-                        android:text="Bank Alfalah"/>
-                    <TextView
-                        android:textColor="@color/opv2"
-                        android:padding="15dp"
+            </androidx.recyclerview.widget.RecyclerView>
 
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_height="wrap_content"
-                        android:lines="3"
 
-                        android:text="0268-1003772020
-                        Muhammad Nasir Imran Nasir Aqeel Nasir"/>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_margin="5dp"
-                android:layout_width="match_parent"
-                app:cardBackgroundColor="#1D000000"
-                app:cardCornerRadius="15dp"
-                android:layout_height="wrap_content">
-                <LinearLayout
+            <ImageButton
+                android:id="@+id/easyPaisa"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:src="@drawable/optimizedlogo"/>
 
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:layout_gravity="center"
-                        android:padding="12dp"
-                        android:layout_width="0dp"
-                        android:layout_marginLeft="6dp"
-                        android:layout_weight="0.05"
-                        android:layout_height="12dp"
-                        android:background="@color/opv1"/>
-                    <TextView
-                        android:layout_gravity="center"
-                        android:textColor="@color/opv2"
-                        android:padding="15dp"
-                        android:layout_width="0dp"
-                        android:layout_weight=".4"
-                        android:layout_height="wrap_content"
-                        android:text="Easy Paisa"/>
-                    <TextView
-                        android:textColor="@color/opv2"
-                        android:padding="15dp"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:lines="2"
-                        android:layout_height="wrap_content"
-                        android:text="0334-5381060
-                                 Aqeel Nasir"/>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
 
-                android:layout_margin="5dp"
-                android:layout_width="match_parent"
-                app:cardBackgroundColor="#1D000000"
-                app:cardCornerRadius="15dp"
-                android:layout_height="wrap_content">
-                <LinearLayout
-
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:layout_gravity="center"
-                        android:padding="12dp"
-                        android:layout_width="0dp"
-                        android:layout_marginLeft="6dp"
-                        android:layout_weight="0.05"
-                        android:layout_height="12dp"
-                        android:background="@color/opv1"/>
-                    <TextView
-                        android:layout_gravity="center"
-                        android:textColor="@color/opv2"
-                        android:padding="15dp"
-                        android:layout_width="0dp"
-                        android:layout_weight=".4"
-                        android:layout_height="wrap_content"
-                        android:text="Jazz Cash"/>
-                    <TextView
-                        android:textColor="@color/opv2"
-                        android:padding="15dp"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_height="wrap_content"
-                        android:text="0300-5274747
-                                Aqeel nasir"/>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
 
 
 
@@ -328,7 +233,7 @@
             android:background="@color/opv1"
             android:textStyle="bold"
             android:gravity="center"
-            android:text="Attach Payment Slip"
+            android:text="Attach Payment Slip Now"
             android:textSize="10dp"
             android:padding="10dp"
             android:layout_marginLeft="15dp"

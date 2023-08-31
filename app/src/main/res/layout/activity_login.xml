@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
+    tools:context=".Activity.Authentication.LoginActivity"
     android:background="#c6d7d2">
 
     <ImageView
@@ -193,19 +193,20 @@
 
             app:layout_constraintTop_toBottomOf="@id/containercode"
             android:layout_gravity="center">
+
             <com.poovam.pinedittextfield.CirclePinField
+                android:id="@+id/circleField"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="numberPassword"
-                app:noOfFields="4"
-                android:textSize="16sp"
                 android:textSelectHandle="@drawable/text_handle"
-                app:highlightColor="@color/opv2"
+                android:textSize="16sp"
                 app:circleRadius="15dp"
-                app:fillerRadius="12dp"
-                app:fillerColor="@color/opv1"
                 app:fieldBgColor="@color/whiteTextColor"
-                android:id="@+id/circleField"/>
+                app:fillerColor="@color/opv1"
+                app:fillerRadius="12dp"
+                app:highlightColor="@color/opv2"
+                app:noOfFields="4" />
 
             <!--   <androidx.cardview.widget.CardView
                    android:layout_margin="5dp"

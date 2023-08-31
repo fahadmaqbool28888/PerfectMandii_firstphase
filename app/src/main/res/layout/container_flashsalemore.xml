@@ -39,34 +39,45 @@
                 android:lines="1"
                 android:text="Product Name"
                 android:gravity="center_horizontal"
-                app:layout_constraintBottom_toTopOf="@id/product_price_"
+                app:layout_constraintBottom_toTopOf="@id/asas"
                 app:layout_constraintStart_toStartOf="@id/prod_container"
                 app:layout_constraintEnd_toEndOf="@id/prod_container"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
-            <TextView
-                android:text="Rs : 100"
-                android:id="@+id/product_price_"
-                android:textColor="#B06053"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@id/prod_container"
+            <LinearLayout
+                android:id="@+id/asas"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/product_name_"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Rs : 100"
+                    android:id="@+id/product_price_"
+                    android:textColor="#B06053"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/prod_container"
 
-                app:layout_constraintStart_toStartOf="@id/prod_container"
-                app:layout_constraintEnd_toEndOf="@id/prod_container"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <TextView
-                android:text="/KG"
-                android:visibility="gone"
-                android:id="@+id/product_weight_1"
-                android:textColor="#B06053"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@id/prod_container"
+                    app:layout_constraintStart_toStartOf="@id/prod_container"
+                    app:layout_constraintEnd_toEndOf="@id/prod_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="/KG"
+                    android:visibility="gone"
+                    android:id="@+id/product_weight_1"
+                    android:textColor="#B06053"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/prod_container"
 
-                app:layout_constraintStart_toEndOf="@id/product_price_"
+                    app:layout_constraintStart_toEndOf="@id/product_price_"
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -88,7 +99,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 android:textColor="@color/whiteTextColor"
-                android:text="Out of stock"
+                android:text="Out of Stock"
                 android:layout_height="wrap_content"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>

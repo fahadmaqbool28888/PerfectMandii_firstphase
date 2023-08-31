@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileArea.PersonalInformationFragment">
+    tools:context=".Activity.Authentication.SignUP.ProfileArea.PersonalInformationFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
