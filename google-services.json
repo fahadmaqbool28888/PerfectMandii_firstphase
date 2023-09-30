@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "499763574187",
+    "project_id": "seller-central-69b46",
+    "storage_bucket": "seller-central-69b46.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499763574187:android:39742685afdce65f91ceee",
+        "android_client_info": {
+          "package_name": "com.vendor.perfectmandii"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "499763574187-8l6iv5ds638iaur4ivjl30knfdga7ell.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOJ4PBKSCVpiBde5WuZ5mHTxV4patPl28"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "499763574187-8l6iv5ds638iaur4ivjl30knfdga7ell.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

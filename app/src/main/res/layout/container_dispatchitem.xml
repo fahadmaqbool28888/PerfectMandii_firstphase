@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="@dimen/google_1x"
+
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivFish_2"
+                android:layout_width="60dp"
+                android:scaleType="centerCrop"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/optimizedlogo" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/panelcontainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/google_1x"
+            >
+
+
+                <TextView
+                    app:layout_constraintTop_toTopOf="@id/panelcontainer"
+                    app:layout_constraintStart_toStartOf="@id/panelcontainer"
+                    android:id="@+id/nameofitem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Item Name"
+                    android:textSize="13dp"
+
+                    android:textColor="@color/opv2"
+                    />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/quba"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@id/panelcontainer"
+                    app:layout_constraintTop_toBottomOf="@id/nameofitem">
+                    <TextView
+                        app:layout_constraintStart_toStartOf="@id/quba"
+                        app:layout_constraintTop_toTopOf="@id/quba"
+                        android:id="@+id/quantitytitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quantity :"
+                        android:maxLines="2"
+                        android:textColor="@color/opv2"
+                        app:layout_constraintBottom_toBottomOf="@id/quba"
+                        android:textSize="12dp"
+                        />
+
+
+                        <androidx.cardview.widget.CardView
+                            app:layout_constraintBottom_toBottomOf="@id/quba"
+                            app:layout_constraintLeft_toRightOf="@id/quantitytitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                            <TextView
+                                android:padding="@dimen/google_1x"
+                                app:layout_constraintEnd_toEndOf="@id/quba"
+                                app:layout_constraintTop_toTopOf="@id/quba"
+                                android:id="@+id/quantityNum"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="15"
+                                android:maxLines="2"
+                                android:background="@color/opv2"
+                                android:textColor="@color/opv1"
+                                android:textSize="12dp"
+                                />
+                        </androidx.cardview.widget.CardView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="@id/panelcontainer"
+                app:layout_constraintBottom_toBottomOf="@id/panelcontainer"
+                app:layout_constraintEnd_toEndOf="@id/panelcontainer">
+
+                <CheckBox
+                    android:id="@+id/check_dispatchItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    />
+             <androidx.cardview.widget.CardView
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 app:cardCornerRadius="6dp"
+                 android:layout_gravity="center_vertical">
+                 <TextView
+                     android:layout_gravity="center_vertical"
+                     android:layout_width="wrap_content"
+                     android:text="Change In Order"
+                     android:background="#E29D02"
+                     android:textColor="@color/whiteTextColor"
+                     android:padding="4dp"
+                     android:layout_marginRight="5dp"
+
+                     android:layout_height="wrap_content"/>
+             </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,5 +1,73 @@
 <resources>
-    <string name="app_name">PerfectMandii</string>
+    <string name="menu_add_product">Add Product</string>
+    <string name="menu_manage_order">Manage Order</string>
+    <string name="menu_manage_shelf">Manage Product</string>
+    <string name="menu_manage_bank">Manage Bank</string>
+    <string name="menu_manage_prices">Manage Prices</string>
+    <string name="menu_manage_reports">Manage Reports</string>
+    <string name="menu_sales_promotion">Sales and Promotion</string>
+    <string name="menu_manage_inventory">Manage Stock</string>
+    <string name="menu_manage_rfq">Manage RFQ</string>
+
+    <!---->
+    <string name="app_name">Seller Central</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mail">Email us</string>
+    <string name="share">Share</string>
+    <string name="upload">Upload</string>
+    <string name="acc">Profile</string>
+    <string name="title_activity_testtv2">testtv2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="exampledata">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+
+
+    <!-- Navigation Drawer menu labels -->
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+
+    <string name="text_str">Note: As a general market practice, Silver   Melamine items are sold based on weight hence actual weight of your ordered items will be confirmed at the time of shipment which means total price may differ than the above amount by . Your balance will be adjusted in your next order</string>
+    <string name="select_category">Select Category</string>
+    <string name="next">Next</string>
+    <string-array name="punjab_city_array">
+        <item>Select City</item>
+        <item>Rawalpindi</item>
+        <item>Faisalabad</item>
+    </string-array>
+    <string-array name="kashmir_city_array">
+        <item>Select City</item>
+        <item>Bagh</item>
+        <item>Dhali</item>
+    </string-array>
+    <string-array name="province_array">
+        <item>Select province</item>
+        <item>Punjab</item>
+        <item>Kashmir</item>
+        <item>Sindh</item>
+        <item>Balochistan</item>
+        <item>khyber pakhtunkhwa</item>
+    </string-array>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="title_activity_reports">ReportsActivity</string>
+    <string name="action_settings">Setting</string>
+    <string name="title_activity_navig">NavigActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="contact_us">Contact US</string>
+
+    <string name="intransit_status">In Transit</string>
+    <string name="_vendor_note"><![CDATA["Dear Vendor, any differential/balance (+/-) that occurred due to the weight difference in silver & melamine products, the customer's account and your account will be adjusted accordingly in the next order by this customer. "]]></string>
+
 </resources>

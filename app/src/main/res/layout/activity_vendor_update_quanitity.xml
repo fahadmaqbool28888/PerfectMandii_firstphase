@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".vendor_update_quanitity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/opv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@color/opv1"
+
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+            <ImageView
+                android:id="@+id/sidnav"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textSize="20dp"
+
+                android:textColor="@color/opv1"
+                android:text="Update Quantity"/>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:id="@+id/itemdish"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="#"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="Item Name"/>
+            <TextView
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:text="Old Quantity"
+                android:textStyle="bold"
+                android:editable="false"
+                android:layout_height="52dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="52dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="New Quantity"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/maincontainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/productList_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/maincontainer"
+            app:layout_constraintStart_toStartOf="@id/maincontainer"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+

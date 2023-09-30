@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.PromotionWork.ManagePromotionActivity">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/left_selectioncontainer"
+        app:layout_constraintStart_toStartOf="parent"
+
+      app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:strokeColor="@color/colorPrimary"
+        android:foregroundTint="@color/colorPrimary"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/teamonename"
+                android:layout_width="100dp"
+                android:background="@null"
+                android:text="Select Product"
+                android:textColor="#A7A7A7"
+                android:textSize="15sp"
+                android:padding="7dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/dropdown"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/teamlistright"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+      android:visibility="gone"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/left_selectioncontainer"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

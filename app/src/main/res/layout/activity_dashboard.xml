@@ -2,32 +2,97 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/backu">
 
-    <com.google.android.material.appbar.AppBarLayout
+   <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        app:layout_constraintTop_toTopOf="parent"
+
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-
+        android:layout_height="wrap_content">
         <androidx.appcompat.widget.Toolbar
+            android:background="#c6d7d2"
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|enterAlways"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+            android:layout_height="wrap_content"
+            app:titleTextColor="@color/opv1"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/toolset"
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_height="52dp"
+
+                >
+                <ImageView
+                    android:id="@+id/backbutton"
+                    android:layout_width="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/toolset"
+                    app:layout_constraintBottom_toBottomOf="@id/toolset"
+                    android:src="@drawable/ic_baseline_keyboard_backspace_24"
+                    android:layout_height="wrap_content"
+                    />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/textportion"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintLeft_toRightOf="@id/backbutton"
+                    >
+                    <TextView
+                        android:id="@+id/part1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Perfect"
+
+                        android:gravity="center_vertical"
+                        android:textSize="24dp"
+
+                        android:textColor="@color/opv2"
+                        app:layout_constraintStart_toStartOf="@id/textportion"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="  MANDI"
+                        android:textSize="24dp"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textColor="@color/opv2"
+
+                        app:layout_constraintLeft_toRightOf="@id/part1"/>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:tabMode="fixed"
-            app:tabGravity="fill"/>
+            app:tabSelectedTextColor="@color/opv1"
+            app:tabTextColor="@color/opv2"
+            android:scrollbars="vertical"
+            app:tabGravity="center"
+
+            app:tabIndicatorColor="@color/opv1"
+            app:tabTextAppearance="@style/TabLayoutTextStyle"
+      />
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+        android:background="#c6d7d2"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="@dimen/google_1x"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="5dp"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/rfq_img"
+                android:layout_width="70dp"
+                android:layout_height="90dp"
+
+                android:src="@drawable/optimizedlogo" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nameofitem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Item Name"
+                    android:textColor="@color/opv2"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/stock_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text=""
+                    android:textColor="@color/opv1"
+                    android:textSize="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:lines="2"
+                            android:text="Current Stock"
+                            android:textAlignment="center"
+                            android:textColor="@color/opv1"
+                            android:textSize="8dp" />
+
+                        <androidx.cardview.widget.CardView
+
+                            android:layout_width="72dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            app:cardBackgroundColor="#F4F0DB"
+                            app:cardCornerRadius="@dimen/google_1x">
+
+                            <EditText
+                                android:id="@+id/available_stock"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                android:background="@null"
+                                android:enabled="false"
+                                android:hint="Enter Stock"
+                                android:inputType="number"
+                                android:textAlignment="center"
+                                android:textColor="@color/opv1"
+                                android:textSize="9sp" />
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:lines="2"
+                            android:maxLines="2"
+                            android:text="New Stock"
+                            android:textAlignment="center"
+                            android:textColor="@color/opv1"
+                            android:textSize="8dp" />
+
+                        <androidx.cardview.widget.CardView
+
+                            android:layout_width="72dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            app:cardBackgroundColor="#F4F0DB"
+                            app:cardCornerRadius="@dimen/google_1x">
+
+                            <EditText
+                                android:id="@+id/stock_value"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+
+                                android:background="@null"
+                                android:hint="Enter Price"
+                                android:inputType="number"
+                                android:textAlignment="center"
+                                android:textColor="@color/opv1"
+                                android:textSize="9sp" />
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/cib_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:lines="2"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textColor="@color/opv1"
+                            android:textSize="8dp" />
+
+                        <androidx.cardview.widget.CardView
+
+                            android:layout_width="72dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            app:cardBackgroundColor="@color/opv2"
+                            app:cardCornerRadius="@dimen/google_1x">
+
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/cix_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Confirm"
+                                    android:textColor="@color/whiteTextColor"
+                                    app:layout_constraintBottom_toBottomOf="@id/cix_1"
+                                    app:layout_constraintEnd_toEndOf="@id/cix_1"
+                                    app:layout_constraintStart_toStartOf="@id/cix_1"
+                                    app:layout_constraintTop_toTopOf="@id/cix_1" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cib_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:lines="2"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textColor="@color/opv1"
+                            android:textSize="8dp" />
+
+                        <androidx.cardview.widget.CardView
+
+                            android:layout_width="102dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            app:cardBackgroundColor="@color/colorred"
+                            app:cardCornerRadius="@dimen/google_1x">
+
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/cix_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Out of Stock"
+                                    android:textColor="@color/whiteTextColor"
+                                    app:layout_constraintBottom_toBottomOf="@id/cix_2"
+                                    app:layout_constraintEnd_toEndOf="@id/cix_2"
+                                    app:layout_constraintStart_toStartOf="@id/cix_2"
+                                    app:layout_constraintTop_toTopOf="@id/cix_2" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cib_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:lines="2"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textColor="@color/opv1"
+                            android:textSize="8dp" />
+
+                        <androidx.cardview.widget.CardView
+
+                            android:layout_width="72dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            app:cardBackgroundColor="@color/opv1"
+                            app:cardCornerRadius="@dimen/google_1x">
+
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/cix_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Replace"
+                                    android:textColor="@color/whiteTextColor"
+                                    app:layout_constraintBottom_toBottomOf="@id/cix_3"
+                                    app:layout_constraintEnd_toEndOf="@id/cix_3"
+                                    app:layout_constraintStart_toStartOf="@id/cix_3"
+                                    app:layout_constraintTop_toTopOf="@id/cix_3" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

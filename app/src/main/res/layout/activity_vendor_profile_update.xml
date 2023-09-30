@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.vendor.VendorProfileUpdateActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/toolset"
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_height="52dp"
+                android:padding="10dp"
+                >
+                <ImageView
+                    android:id="@+id/backbutton"
+                    android:layout_width="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/toolset"
+                    app:layout_constraintBottom_toBottomOf="@id/toolset"
+                    android:src="@drawable/ic_baseline_keyboard_backspace_24"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Manage Profile"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/opv2"
+                    app:layout_constraintLeft_toRightOf="@id/backbutton"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:padding="10dp"
+
+                android:textStyle="bold"
+                android:textColor="#A1887F"
+                android:text="Store Description"
+                />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/store_Update_desc"
+                    android:lines="4"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:padding="10dp"
+
+                    />
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:padding="10dp"
+
+                android:textStyle="bold"
+                android:textColor="#A1887F"
+                android:text="Office/Shop/Business Address*"
+                />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/update_warehouse_address"
+                    android:lines="4"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:padding="10dp"
+
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:padding="10dp"
+
+                android:textStyle="bold"
+                android:textColor="#A1887F"
+                android:text="Return Address*"
+                />
+            <CheckBox
+                android:id="@+id/same_Asabove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Same as above"
+                android:textStyle="bold"
+                android:textColor="#A1887F"
+                />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/update_shipping_address"
+                    android:lines="4"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:padding="10dp"
+
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textColor="#A1887F"
+                android:text="Secondary Contact*"
+                />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/update_contact_sphone"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:padding="10dp"
+
+                    />
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:text="Upload Profile"
+                android:textColor="#A1887F"
+                android:textStyle="bold"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/upload_card"
+
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/upload_sa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+
+
+                        android:id="@+id/update_viewimage"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/uploadicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintTop_toTopOf="@id/upload_sa"
+                        app:layout_constraintBottom_toBottomOf="@id/upload_sa"
+                        app:layout_constraintStart_toStartOf="@id/upload_sa"
+                        app:layout_constraintEnd_toEndOf="@id/upload_sa"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/activity_horizontal_margin">
+
+                    <LinearLayout
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"/>
+                    <androidx.cardview.widget.CardView
+                        app:cardBackgroundColor="@color/opv1"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/update_profile"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/next_button_attachD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:padding="10dp"
+                            android:textColor="#ffff"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"
+                            android:text="Update Your Profile"
+                            />
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- TODO: Update blank fragment layout -->
+
+
+
+</ScrollView>

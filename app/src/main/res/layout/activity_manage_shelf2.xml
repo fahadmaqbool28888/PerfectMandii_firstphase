@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManageShelf_Activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/opv2"
+        android:id="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/bac_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                android:textColor="@color/opv1"
+                android:layout_marginLeft="@dimen/google_1x"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manage Product"
+                app:layout_constraintStart_toEndOf="@id/bac_icon"
+                app:layout_constraintTop_toTopOf="@id/bac_icon"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.recyclerview.widget.RecyclerView
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+
+   android:id="@+id/productshelf_"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

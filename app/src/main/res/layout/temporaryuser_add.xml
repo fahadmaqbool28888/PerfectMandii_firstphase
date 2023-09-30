@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainc">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:src="@drawable/optimizedlogo"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/taskname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Name"
+            android:textSize="15dp"
+
+            android:textColor="@color/opv1"
+            />
+        <EditText
+            android:id="@+id/inputusername"
+            android:layout_width="300dp"
+            android:hint="First Name / Last Name"
+            android:layout_height="wrap_content"/>
+        <TextView
+
+            android:id="@+id/taskdesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+
+            android:textSize="15dp"
+
+            android:textColor="@color/opv1"
+            />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/inputusernumber"
+                android:layout_width="180dp"
+                android:hint="03*********"
+                android:maxLength="12"
+                android:inputType="phone"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/getotp"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Click for OTP"
+                android:background="@color/opv2"
+                android:textColor="@color/opv1"
+                android:textSize="16dp"
+                android:padding="5dp"
+
+                />
+        </LinearLayout>
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/systempin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="System pin"
+            android:textSize="15dp"
+
+            android:textColor="@color/opv1"
+            />
+
+
+        <TextView
+            android:id="@+id/userpin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suggested pin"
+            android:textSize="15dp"
+
+            android:textColor="@color/opv1"
+            />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.poovam.pinedittextfield.CirclePinField
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberPassword"
+                app:noOfFields="4"
+                android:textSize="16sp"
+                android:textSelectHandle="@drawable/text_handle"
+                app:highlightColor="@color/opv2"
+                app:circleRadius="10dp"
+                app:fillerRadius="12dp"
+                app:fillerColor="@color/opv1"
+                app:fieldBgColor="@color/whiteTextColor"
+                android:id="@+id/circleField5"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/usercpin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm pin"
+            android:textSize="15dp"
+
+            android:textColor="@color/opv1"
+            />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.poovam.pinedittextfield.CirclePinField
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberPassword"
+                app:noOfFields="4"
+                android:textSize="16sp"
+                android:textSelectHandle="@drawable/text_handle"
+                app:highlightColor="@color/opv2"
+                app:circleRadius="10dp"
+                app:fillerRadius="12dp"
+                app:fillerColor="@color/opv1"
+                app:fieldBgColor="@color/whiteTextColor"
+                android:id="@+id/circleField6"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/taskadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="5dp"
+            android:layout_marginTop="35dp"
+            android:background="@color/opv2"
+            android:textColor="@color/opv1"
+            android:text="Sign up" />
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

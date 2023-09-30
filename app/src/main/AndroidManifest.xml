@@ -1,24 +1,275 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mandi.perfectmandii">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:largeHeap="true"
         android:supportsRtl="true"
-        android:theme="@style/MyMaterialTheme">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
-            android:name=".DashboardActivity"
-            >
+            android:name=".CategoryDetail.Activity.ByCategoryActivity"
+            android:exported="true" >
+
+
+        </activity>
+        <activity
+            android:name=".Activity.RFQ.DetailRFQActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.RFQ.ViewRFQActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.OrderStockActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.EditProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.LoadProductsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.MainExampleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.vendor.VendorProfileUpdateActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.ManageFlashSale.FlashSaLEActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrderTransitionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewOrderDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.PromotionProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.PriceUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.StockUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Dispatch.TransitDispatchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Dispatch.vendorDispatchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.PromotionWork.ManagePromotionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DailyOrder.DetailOfOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DailyOrder.DailyOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManageShelf_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ManageShelfActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard.OPActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".BI.ReportsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_reports"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".profile_Updates.ProductInformationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".profile_Updates.ProfileInformation"
+            android:exported="true" />
+        <activity
+            android:name=".vendor_update_quanitity"
+            android:exported="true" />
+        <activity
+            android:name=".vendor_update_product"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.User.customerprofile.StoreProfile.approvalstage.approvalActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.User.customerprofile.StoreProfile.AddStoreActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Merchant.profilepicActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.vendor.AddProductActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.vendor.dispatchActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.InvoiceView"
+            android:exported="true" />
+        <activity
+            android:name=".CartOActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Order.fetch.UserOrderActivity"
+            android:exported="true" />
+        <activity
+            android:name=".OrderDashboardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.User.customerprofile.EditProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.User.customerprofile.CustomerDashboard"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.MenuOptions.MenuActivity"
+            android:exported="true" />
+        <!--
+            <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_mainupdate"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        </activity>
+        -->
+        <activity
+            android:name=".Activity.PaymentDepositActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BankDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DepositConfirmationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".OrderViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".shoppingBasket"
+            android:exported="true" />
+        <activity
+            android:name=".testtv2"
+            android:exported="true"
+            android:label="@string/title_activity_testtv2"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".Testv"
+            android:exported="true" />
+        <activity
+            android:name=".EnterYourNewPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".confirmPassword"
+            android:exported="true" />
+
+        <meta-data
+            android:name="android.app.searchable"
+            android:resource="@xml/searchable" />
+
+        <activity
+            android:name=".ForgetPassword"
+            android:exported="true" />
+        <activity
+            android:name=".testfile"
+            android:exported="true" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PaymentModuleActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ConfirmOrderitem"
+            android:exported="true" />
+        <activity
+            android:name=".CategoryByProductActivity"
+            android:exported="true" />
+        <activity
+            android:name=".UserProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CategoryByVendorActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ProductCatalog"
+            android:exported="true" />
+        <activity
+            android:name=".testpart"
+            android:exported="true" />
+        <activity
+            android:name=".OrderstatusActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AddtocartitemActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ProductProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".profileActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:maxWidth="300dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.RFQ.fragment.ShowProductFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:id="@+id/headlayout"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/header_r_title"
+            app:layout_constraintStart_toStartOf="@id/headlayout"
+            app:layout_constraintTop_toTopOf="@id/headlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/close_rfq"
+
+
+
+
+            android:src="@drawable/baseline_close_24"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rfq_rclr"
+    android:layout_width="match_parent"
+
+    android:layout_height="0dp"
+    android:layout_weight="9"
+    app:layout_constraintBottom_toBottomOf="parent"/>
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:id="@+id/mainsae"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+
+    app:cardCornerRadius="25dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:background="@color/primarybackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivFish_getproductimage"
+
+
+            android:layout_width="60dp"
+            android:layout_height="55dp"
+            app:civ_border_color="@color/primarybackground"
+            app:civ_border_width="5dp"
+
+            android:src="@drawable/optimizedlogo"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            app:cardCornerRadius="2dp"
+
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="3dp"
+
+                >
+
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/orderid"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/opv2"
+                        android:textSize="9dp"
+                        android:text="Product Name:"/>
+                    <TextView
+                        android:id="@+id/getproductname"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/opv2"
+                        android:layout_height="wrap_content"
+                        android:textSize="9dp"
+                        android:text="123456"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/invoiceid"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/opv2"
+                        android:textSize="9dp"
+                        android:text="Selling Price:"/>
+                    <TextView
+                        android:id="@+id/getsellingprice"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/opv2"
+                        android:layout_height="wrap_content"
+                        android:textSize="9dp"
+                        android:text="123456"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/quantity"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/opv2"
+                        android:textSize="9dp"
+                        android:text="Product Quantity:"/>
+                    <TextView
+                        android:id="@+id/getquantity"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/opv2"
+                        android:layout_height="wrap_content"
+                        android:textSize="9dp"
+                        android:text="123456"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/subtotal"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/opv2"
+                        android:textSize="9dp"
+                        android:text="Subtotal:"/>
+                    <TextView
+                        android:id="@+id/getsubtotal"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/opv2"
+                        android:layout_height="wrap_content"
+                        android:textSize="9dp"
+                        android:text="123456"/>
+                </LinearLayout>
+
+           </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

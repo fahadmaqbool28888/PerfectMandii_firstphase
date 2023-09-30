@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:id="@+id/mainsae"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+
+    app:cardCornerRadius="25dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:background="@color/primarybackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivFish"
+
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:civ_border_color="@color/primarybackground"
+            app:civ_border_width="5dp"
+
+            android:src="@drawable/optimizedlogo"/>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/whiteTextColor"
+            android:padding="10dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/opesz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"/>
+
+
+
+            <TextView
+                android:id="@+id/branchname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bank Name"
+                android:textColor="#013747"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/acctitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="Account title: Fahad Maqbool"
+                android:textColor="#013747"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/branchcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="Branch Code: 0816"
+                android:textColor="#013747"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ppdesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="Bank Account: 0102519446"
+                android:textColor="#013747"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

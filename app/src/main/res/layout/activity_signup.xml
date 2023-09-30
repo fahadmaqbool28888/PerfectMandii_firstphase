@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity"
+    android:background="@color/backu">
+
+    <ImageView
+        android:id="@+id/logo_pal"
+        android:layout_width="220dp"
+        android:layout_height="170dp"
+        android:src="@drawable/modifylogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/containercode"
+        android:layout_marginBottom="120dp"
+/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/containercode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="10dp"
+        android:padding="25dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:background="#ffffff"
+         >
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                app:ccp_areaCodeDetectedCountry="true"
+                app:ccp_textSize="15dp"
+                app:ccp_defaultPhoneCode="92"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:hint="Enter your mobile number"
+                android:background="@null"
+                android:textSize="15dp"
+
+                android:layout_gravity="center"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ccp"/>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/dispa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register or Login with mobile number"
+        android:textStyle="bold"
+        android:textColor="@color/whiteTextColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/containercode"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/lwp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login with Password"
+        android:textColor="@color/whiteTextColor"
+
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/containercode"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/cw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/lwp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:divider="@drawable/divider_drawable">
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="or Continue with"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/whiteTextColor"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cw">
+        <ImageView
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:src="@drawable/fb"/>
+        <ImageView
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:src="@drawable/googlelogo"/>
+    </LinearLayout>
+
+ </androidx.constraintlayout.widget.ConstraintLayout>

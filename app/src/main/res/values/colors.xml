@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#125688</color>
-    <color name="colorPrimaryDark">#125688</color>
-    <color name="textColorPrimary">#FFFFFF</color>
-    <color name="windowBackground">#FFFFFF</color>
-    <color name="navigationBarColor">#000000</color>
-    <color name="colorAccent">#c8e8ff</color>
+    <color name="colorPrimary">#4000ff</color>
+    //
+    <!--colors for profile-->
+    <color name="whiteTextColor">#fff</color>
+    <color name="profileBackground">#fff</color>
+    <color name="blackTextColor">#000</color>
+    <color name="colortext">#3A3D54</color>
+    <color name="scolor">#7e1416</color>
+
+    //
+    <color name="backu">#DC8013</color>
+
+    <color name="opv1">#DC8013</color>
+    <color name="opv2">#013747</color>
+    <color name="primarybackground">#DC8013</color>
+    <color name="cardbak">#DEC19b</color>
+    <color name="colorblack">#000000</color>
+    <color name="colorred">#f01423</color>
 </resources>
